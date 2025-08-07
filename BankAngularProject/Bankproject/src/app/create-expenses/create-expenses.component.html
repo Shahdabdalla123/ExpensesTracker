@@ -11,7 +11,7 @@
         <div class="mb-3">
             <label class="form-label">Title</label>
             <input type="text" class="form-control" formControlName="Title" />
-            <div class="text-danger" *ngIf="expenseForm.get('Title')?.touched && expenseForm.get('Title')?.invalid">
+            <div class="text-danger" *ngIf="expenseForm.get('Title')?.touched && expenseForm.get('Title')?.hasError('required')">
                 Title is required
             </div>
             <div class="text-danger"
@@ -23,7 +23,7 @@
         <div class="mb-3">
             <label class="form-label">Category</label>
             <input type="text" class="form-control" formControlName="Category" />
-            <div class="text-danger" *ngIf="expenseForm.get('Category')?.errors?.['required']">Category is required</div>
+            <div class="text-danger" *ngIf="expenseForm.get('Category')?.touched && expenseForm.get('Category')?.hasError('required')">Category is required</div>
                  <div class="text-danger" *ngIf="expenseForm.get('Category')?.touched && expenseForm.get('Category')?.hasError('pattern')">
                 Only letters and spaces alloweds
             </div>

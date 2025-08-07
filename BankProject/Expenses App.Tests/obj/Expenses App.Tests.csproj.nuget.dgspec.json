@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {}
+    "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {}
   },
   "projects": {
-    "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {
+    "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj",
+        "projectUniqueName": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj",
         "projectName": "Expenses App.Tests",
-        "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj",
+        "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj",
         "packagesPath": "C:\\Users\\Abdo\\.nuget\\packages\\",
-        "outputPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\obj\\",
+        "outputPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+o8uYMXgtUo=",
+  "dgSpecHash": "Ox/EVw/g6l4=",
   "success": true,
-  "projectFilePath": "D:\\.Net Course iti\\BankProject\\BankProject\\BankProject.csproj",
+  "projectFilePath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\BankProject\\BankProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abdo\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Abdo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

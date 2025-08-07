@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.Net Course iti\\BankProject\\BankProject\\BankProject.csproj": {}
+    "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\BankProject\\BankProject.csproj": {}
   },
   "projects": {
-    "D:\\.Net Course iti\\BankProject\\BankProject\\BankProject.csproj": {
+    "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\BankProject\\BankProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Net Course iti\\BankProject\\BankProject\\BankProject.csproj",
+        "projectUniqueName": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\BankProject\\BankProject.csproj",
         "projectName": "BankProject",
-        "projectPath": "D:\\.Net Course iti\\BankProject\\BankProject\\BankProject.csproj",
+        "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\BankProject\\BankProject.csproj",
         "packagesPath": "C:\\Users\\Abdo\\.nuget\\packages\\",
-        "outputPath": "D:\\.Net Course iti\\BankProject\\BankProject\\obj\\",
+        "outputPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\BankProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,17 +32,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
-                "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj"
+              "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
+                "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj"
               },
-              "D:\\.Net Course iti\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj": {
-                "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj"
+              "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj": {
+                "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj"
               },
-              "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj": {
-                "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj"
+              "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj": {
+                "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj"
               },
-              "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {
-                "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj"
+              "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {
+                "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj"
               }
             }
           }
@@ -137,14 +137,14 @@
         }
       }
     },
-    "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
+    "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj",
+        "projectUniqueName": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj",
         "projectName": "Expenses App .Core",
-        "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj",
+        "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj",
         "packagesPath": "C:\\Users\\Abdo\\.nuget\\packages\\",
-        "outputPath": "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\obj\\",
+        "outputPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -250,14 +250,14 @@
         }
       }
     },
-    "D:\\.Net Course iti\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj": {
+    "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Net Course iti\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj",
+        "projectUniqueName": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj",
         "projectName": "Expenses App.Application",
-        "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj",
+        "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj",
         "packagesPath": "C:\\Users\\Abdo\\.nuget\\packages\\",
-        "outputPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Application\\obj\\",
+        "outputPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -278,11 +278,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
-                "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj"
+              "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
+                "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj"
               },
-              "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj": {
-                "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj"
+              "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj": {
+                "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj"
               }
             }
           }
@@ -370,14 +370,14 @@
         }
       }
     },
-    "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj": {
+    "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj",
+        "projectUniqueName": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj",
         "projectName": "Expenses App.infastructure",
-        "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj",
+        "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj",
         "packagesPath": "C:\\Users\\Abdo\\.nuget\\packages\\",
-        "outputPath": "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\obj\\",
+        "outputPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -398,11 +398,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
-                "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj"
+              "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
+                "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj"
               },
-              "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {
-                "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj"
+              "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {
+                "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj"
               }
             }
           }
@@ -490,14 +490,14 @@
         }
       }
     },
-    "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {
+    "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj",
+        "projectUniqueName": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj",
         "projectName": "Expenses App.Tests",
-        "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj",
+        "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\Expenses App.Tests.csproj",
         "packagesPath": "C:\\Users\\Abdo\\.nuget\\packages\\",
-        "outputPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Tests\\obj\\",
+        "outputPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

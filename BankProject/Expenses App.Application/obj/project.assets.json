@@ -5146,11 +5146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.Net Course iti\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj",
+      "projectUniqueName": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj",
       "projectName": "Expenses App.Application",
-      "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj",
+      "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Application\\Expenses App.Application.csproj",
       "packagesPath": "C:\\Users\\Abdo\\.nuget\\packages\\",
-      "outputPath": "D:\\.Net Course iti\\BankProject\\Expenses App.Application\\obj\\",
+      "outputPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5171,11 +5171,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
-              "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj"
+            "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj": {
+              "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App .Core\\Expenses App .Core.csproj"
             },
-            "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj": {
-              "projectPath": "D:\\.Net Course iti\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj"
+            "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj": {
+              "projectPath": "D:\\.Net Course iti\\ExpensesTracker\\BankProject\\Expenses App.infastructure\\Expenses App.infastructure.csproj"
             }
           }
         }
