@@ -7,24 +7,19 @@
             <div class="card-body p-4">
                 <div class="input-group input-group-lg">
                     <input type="text" [(ngModel)]="searchCategory" placeholder="Search by category..."
-                        class="form-control form-control-lg border-secondary" aria-label="Search expenses">
-                    <div class="input-group-append ml-2">
-                        <button class="btn btn-primary px-4 mr-2 search-btn" (click)="filteredExpenses()">
-                            <i class="bi bi-search mr-2"></i> Search
-                        </button>
+                        class="form-control form-control-lg border-secondary" aria-label="Search expenses"(ngModelChange)="filteredExpenses()">
+                     <div class="input-group-append ml-2">                      
                         <button class="btn btn-outline-secondary px-4 clear-btn" (click)="clearSearch()">
                             <i class="bi bi-x mr-2"></i> Clear
                         </button>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Rest of your existing code remains the same -->
-
-<!-- Main Content -->
+ 
 <div class="container expense-container">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <span class="mb-0 text-muted font-weight-bold">

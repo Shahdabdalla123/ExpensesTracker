@@ -19,13 +19,13 @@ import { EditExpensesComponent } from '../edit-expenses/edit-expenses.component'
 export class HomeComponent implements OnInit {
   expenses: ExpensesDTo[] = [];
   searchCategory: string = '';
-  TotalExpenses:number=0
+  TotalExpenses: number = 0
 
   constructor(
     public auth: AuthenticationService,
     private expensesService: ExpensesService,
     private dialog: MatDialog
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.loadExpenses();
@@ -75,12 +75,12 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  
+
   editExpense(id: number) {
     const dialogRef = this.dialog.open(EditExpensesComponent, {
       width: '900px',
       disableClose: true,
-     data: { expenseId: id } 
+      data: { expenseId: id }
     });
 
     dialogRef.afterClosed().subscribe((result) => {
@@ -96,16 +96,14 @@ export class HomeComponent implements OnInit {
           if (res.success) {
             this.expenses = res.data;
           } else {
-            alert('Failed to fetch filtered expenses');
+            this.loadExpenses();
           }
         },
-        error: (err) => {
-          console.error(err);
-          alert('Error fetching expenses by category');
-        }
+
       });
-    } else {
-      alert('Search Category is Required');
+    }
+    else {
+      this.loadExpenses();
     }
   }
 
