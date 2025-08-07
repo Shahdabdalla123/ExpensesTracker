@@ -19,7 +19,7 @@ export class RegisterComponent {
     private router: Router,
     private auth: AuthenticationService,
     private user: AccountServiceService
-  ) {}
+  ) { }
 
   MyForm = new FormGroup(
     {
@@ -42,35 +42,35 @@ export class RegisterComponent {
     { validators: RegisterComponent.passwordMatchValidator }
   );
 
-static passwordMatchValidator(control: AbstractControl) {
-  const passwordControl = control.get('pass');
-  const confirmControl = control.get('confirmPassword');
+  static passwordMatchValidator(control: AbstractControl) {
+    const passwordControl = control.get('pass');
+    const confirmControl = control.get('confirmPassword');
 
-  if (!confirmControl) return null;
+    if (!confirmControl) return null;
 
-   if (confirmControl.errors && confirmControl.errors['required']) {
+    if (confirmControl.errors && confirmControl.errors['required']) {
+      return null;
+    }
+
+    const password = passwordControl?.value;
+    const confirmPassword = confirmControl.value;
+
+    if (password !== confirmPassword) {
+      confirmControl.setErrors({ mismatch: true });
+    } else {
+      if (confirmControl.hasError('mismatch')) {
+        confirmControl.setErrors(null);
+      }
+    }
     return null;
   }
-
-  const password = passwordControl?.value;
-  const confirmPassword = confirmControl.value;
-
-  if (password !== confirmPassword) {
-    confirmControl.setErrors({ mismatch: true });
-  } else {
-     if (confirmControl.hasError('mismatch')) {
-      confirmControl.setErrors(null);
-    }
-  }
-  return null;
-}
 
   showPassword: boolean = false;
 
   togglePasswordVisibility(): void {
     this.showPassword = !this.showPassword;
   }
-    showConfirmPassword: boolean = false;
+  showConfirmPassword: boolean = false;
 
   toggleConfirmPasswordVisibility(): void {
     this.showConfirmPassword = !this.showConfirmPassword;
@@ -96,9 +96,12 @@ static passwordMatchValidator(control: AbstractControl) {
           this.router.navigate(['/login']);
         } else {
           this.MyForm.reset();
-          setTimeout(() => {
-            alert('Registration failed. Please try again.');
-          }, 10);
+
+          if (Array.isArray(response.errors)) {
+            alert(response.errors.join(', '));
+          } else if (typeof response.errors === 'string') {
+           alert( response.errors);
+          } 
         }
       },
       error: (err) => {
