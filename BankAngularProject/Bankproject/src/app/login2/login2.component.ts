@@ -12,53 +12,55 @@ import { AuthenticationService } from '../ApiServices/authentication.service';
   styleUrl: './login2.component.css'
 })
 export class Login2Component {
- constructor(private router:Router, private accountService: AccountServiceService,private auth: AuthenticationService)
-  {
+  constructor(private router: Router, private accountService: AccountServiceService, private auth: AuthenticationService) {
 
   }
   MyForm = new FormGroup(
     {
-      
-        userName: new FormControl('', [
+
+      userName: new FormControl('', [
         Validators.required,
         Validators.pattern(/^[a-zA-Z]+(?: [a-zA-Z]+)*$/)]),
-        pass: new FormControl('', [
-         Validators.required,
-         Validators.minLength(6),
-         Validators.maxLength(100),
-         Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&#]).+$/)
-    ])
-    
+      pass: new FormControl('', [
+        Validators.required,
+        Validators.minLength(6),
+        Validators.maxLength(100),
+        Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&#]).+$/)
+      ])
+
     },
-    
+
   );
-    showPassword: boolean = false;
+  showPassword: boolean = false;
 
   togglePasswordVisibility(): void {
     this.showPassword = !this.showPassword;
   }
-   onSubmit() {
+  onSubmit() {
     const userName = this.MyForm.value.userName!;
     const Password = this.MyForm.value.pass!;
- 
+
     this.accountService.login(userName, Password).subscribe({
       next: (response) => {
-    if (response.isSuccess) {  
-      this.auth.setAuthState(response.token);
-      this.auth.setUsername(response.username);
-      this.router.navigate(['/home']);
-    } else {
-      this.MyForm.reset();
-      setTimeout(() => {
-      alert('Username or Password is invalid. Try again');
-    }, 10); 
-    
-    }
-  },
-  error: (err) => {
-    alert('An Error occurred try again later');
-    console.error('Login error', err);
+        if (response.isSuccess) {
+          this.auth.setAuthState(response.token);
+          this.auth.setUsername(response.username);
+          this.router.navigate(['/home']);
+        } else {
+          this.MyForm.reset();
+
+          if (Array.isArray(response.errors)) {
+            alert(response.errors.join(', '));
+          } else if (typeof response.errors === 'string') {
+            alert(response.errors);
+          }
+
+        }
+      },
+      error: (err) => {
+        alert('An Error occurred try again later');
+        console.error('Login error', err);
+      }
+    });
   }
-});
-}
 }
