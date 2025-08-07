@@ -13,7 +13,12 @@ export interface UserDto {
   
   
 }
-
+export interface ApiResponse {
+  token: string;
+  username: string;
+  isSuccess: boolean;
+  errors: string[];
+}
 @Injectable({
   providedIn: 'root'
 })
@@ -21,19 +26,18 @@ export class AccountServiceService {
     constructor(private http: HttpClient,private router:Router,private auth:AuthenticationService) { }
     private apiUrl = `${API_CONFIG.apiUrl}`;
 
-    register(userData: FormData): Observable<any> {
-    return this.http.post(`${this.apiUrl}Auth/register`,
-      {
-        userName: userData.get('Username') as string,
-        email: userData.get('Email') as string,
-        password: userData.get('Password') as string,
-        confirmPassword: userData.get('ConfirmPassword') as string
-      }
-     );
+ register(userData: FormData): Observable<ApiResponse> {
+    return this.http.post<ApiResponse>(`${this.apiUrl}Auth/register`, {
+      userName: userData.get('Username') as string,
+      email: userData.get('Email') as string,
+      password: userData.get('Password') as string,
+      confirmPassword: userData.get('ConfirmPassword') as string
+    });
   }
-    login(UserName: string, Password: string): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}Auth/login`, {
-      UserName: UserName,
+
+  login(UserName: string, Password: string): Observable<ApiResponse> {
+    return this.http.post<ApiResponse>(`${this.apiUrl}Auth/login`, {
+      userName: UserName,
       password: Password
     });
   }
