@@ -1,0 +1,19 @@
+D:\.Net Course iti\BankProject\Expenses App.infastructure\bin\Debug\net8.0\Expenses App.infastructure.deps.json
+D:\.Net Course iti\BankProject\Expenses App.infastructure\bin\Debug\net8.0\Expenses App.infastructure.runtimeconfig.json
+D:\.Net Course iti\BankProject\Expenses App.infastructure\bin\Debug\net8.0\Expenses App.infastructure.dll
+D:\.Net Course iti\BankProject\Expenses App.infastructure\bin\Debug\net8.0\Expenses App.infastructure.pdb
+D:\.Net Course iti\BankProject\Expenses App.infastructure\bin\Debug\net8.0\Expenses App .Core.dll
+D:\.Net Course iti\BankProject\Expenses App.infastructure\bin\Debug\net8.0\Expenses App .Core.pdb
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\Expenses App.infastructure.csproj.AssemblyReference.cache
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\Expenses App.infastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\Expenses App.infastructure.AssemblyInfoInputs.cache
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\Expenses App.infastructure.AssemblyInfo.cs
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\Expenses App.infastructure.csproj.CoreCompileInputs.cache
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\Expenses.84C2C572.Up2Date
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\Expenses App.infastructure.dll
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\refint\Expenses App.infastructure.dll
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\Expenses App.infastructure.pdb
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\Expenses App.infastructure.genruntimeconfig.cache
+D:\.Net Course iti\BankProject\Expenses App.infastructure\obj\Debug\net8.0\ref\Expenses App.infastructure.dll
+D:\.Net Course iti\BankProject\Expenses App.infastructure\bin\Debug\net8.0\Expenses App.Tests.dll
+D:\.Net Course iti\BankProject\Expenses App.infastructure\bin\Debug\net8.0\Expenses App.Tests.pdb

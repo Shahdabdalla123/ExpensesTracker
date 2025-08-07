@@ -1,0 +1,14 @@
+D:\.Net Course iti\BankProject\Expenses App .Core\bin\Debug\net8.0\Expenses App .Core.deps.json
+D:\.Net Course iti\BankProject\Expenses App .Core\bin\Debug\net8.0\Expenses App .Core.runtimeconfig.json
+D:\.Net Course iti\BankProject\Expenses App .Core\bin\Debug\net8.0\Expenses App .Core.dll
+D:\.Net Course iti\BankProject\Expenses App .Core\bin\Debug\net8.0\Expenses App .Core.pdb
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\Expenses App .Core.csproj.AssemblyReference.cache
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\Expenses App .Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\Expenses App .Core.AssemblyInfoInputs.cache
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\Expenses App .Core.AssemblyInfo.cs
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\Expenses App .Core.csproj.CoreCompileInputs.cache
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\Expenses App .Core.dll
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\refint\Expenses App .Core.dll
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\Expenses App .Core.pdb
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\Expenses App .Core.genruntimeconfig.cache
+D:\.Net Course iti\BankProject\Expenses App .Core\obj\Debug\net8.0\ref\Expenses App .Core.dll
