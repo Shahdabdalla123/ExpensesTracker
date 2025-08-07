@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  padding: 20px;
+  background: #fff;
+}
+
+ form {
+  width: 100%;
+  max-width: 800px;
+}
+
+ 
+input.form-control {
+  border-radius: 6px;
+}
+
+ 

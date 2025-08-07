@@ -1,0 +1,45 @@
+<div class="container mt-4 position-relative">
+    <!-- Header with Title (left) and Close Icon (right) -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="text-primary m-0">Add New Expense</h3>
+        <button type="button" class="btn btn-link text-muted p-0 close-button" (click)="cancel()">
+            <i class="bi bi-x-lg fs-4"></i>
+        </button>
+    </div>
+
+    <form [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" formControlName="Title" />
+            <div class="text-danger" *ngIf="expenseForm.get('Title')?.touched && expenseForm.get('Title')?.invalid">
+                Title is required
+            </div>
+            <div class="text-danger"
+                *ngIf="expenseForm.get('Title')?.touched && expenseForm.get('Title')?.hasError('pattern')">
+                Only letters and spaces allowed
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Category</label>
+            <input type="text" class="form-control" formControlName="Category" />
+            <div class="text-danger" *ngIf="expenseForm.get('Category')?.errors?.['required']">Category is required</div>
+                 <div class="text-danger" *ngIf="expenseForm.get('Category')?.touched && expenseForm.get('Category')?.hasError('pattern')">
+                Only letters and spaces alloweds
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Amount</label>
+            <input type="number" class="form-control" formControlName="Amount" />
+            <div class="text-danger" *ngIf="expenseForm.get('Amount')?.touched && expenseForm.get('Amount')?.invalid">
+                Amount must be greater than 0
+            </div>
+        </div>
+
+        <button class="btn btn-primary mt-3" type="submit" [disabled]="isSubmitting || expenseForm.invalid">
+            {{ isSubmitting ? 'Saving...' : 'Create Expense' }}
+        </button>
+    </form>
+
+</div>

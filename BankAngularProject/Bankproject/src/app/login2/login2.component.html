@@ -1,0 +1,81 @@
+<div class="container-fluid vh-100 g-0">
+    <div class="row h-100 g-0">
+        <div class="col-md-6 d-flex align-items-center justify-content-center bg-light">
+            <div class="p-5 shadow-sm bg-white rounded" style="width: 100%; max-width: 500px;height: 570px;">
+                <div class="text-center mb-5 mt-4">
+                    <h2 class="fs-bold text-primary">Welcome Back</h2>
+                </div>
+                <form [formGroup]="MyForm" (ngSubmit)="onSubmit()">
+                    <div class="mb-4 mt-5">
+                        <label for="username" class="form-label fw-semibold">Username</label>
+                        <input type="text" class="form-control border-0 shadow-sm" id="username" formControlName="userName"
+                            placeholder="Enter username"
+                            [ngClass]="{'is-invalid': MyForm.get('userName')?.invalid && MyForm.get('userName')?.touched}">
+                        <div *ngIf="MyForm.get('userName')?.invalid && MyForm.get('userName')?.touched"
+                            class="invalid-feedback">
+                            <div *ngIf="MyForm.get('userName')?.errors?.['required']">Username is required</div>
+                            <div *ngIf="MyForm.get('userName')?.errors?.['pattern']">Only alphabetic characters are
+                                allowed</div>
+                        </div>
+                    </div>
+
+                          <div class="mb-4">
+                        <label for="password" class="form-label fw-semibold">Password</label>
+                        <div class="input-group">
+                            <input [type]="showPassword ? 'text' : 'password'" class="form-control border-0 shadow-sm"
+                                placeholder="Enter password" formControlName="pass"
+                                [ngClass]="{'is-invalid': MyForm.get('pass')?.invalid && MyForm.get('pass')?.touched}" />
+                            <span class="input-group-text bg-light border-0" style="cursor: pointer;"
+                                (click)="togglePasswordVisibility()">
+                                <i class="bi fs-5" [class.bi-eye-fill]="showPassword"
+                                    [class.bi-eye-slash-fill]="!showPassword"></i>
+                            </span>
+                        </div>
+                        <!-- Validation Messages -->
+                        <div *ngIf="MyForm.get('pass')?.invalid && MyForm.get('pass')?.touched"
+                            class="invalid-feedback d-block">
+                            <div *ngIf="MyForm.get('pass')?.errors?.['required']">Password is required</div>
+                            <div *ngIf="MyForm.get('pass')?.errors?.['minlength']">Password must be at least 6
+                                characters</div>
+                            <div *ngIf="MyForm.get('pass')?.errors?.['maxlength']">Password must not exceed 100
+                                characters</div>
+                            <div *ngIf="MyForm.get('pass')?.errors?.['pattern']">
+                                Requiered uppercase,lowercase letter and special character
+                            </div>
+                        </div>
+                    </div>
+ 
+
+                       <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label text-muted small" for="rememberMe">Remember me</label>
+                        </div>
+                         
+                    </div>
+
+                    <div class="d-grid mb-3 ">
+                        <button type="submit" class="btn btn-primary py-2 fw-semibold" [disabled]="MyForm.invalid">
+                            Login
+                        </button>
+                    </div>
+
+                </form>
+                <p class="text-center mb-0">
+                    Don't have account?
+                    <a [routerLink]="['/register']" class="text-decoration-none text-primary">Sign Up</a>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 p-0 position-relative">
+            <img src="images/Expenses.jpeg" alt="Expenses" class="login-image">
+            <div class="position-absolute top-50 start-50 translate-middle text-white text-center d-none d-md-block"
+                style="width: 80%;">
+                <h2 class="fw-bold mb-3">Track Your Expenses</h2>
+                <p class="lead">Manage your finances with our powerful expense tracking system</p>
+            </div>
+        </div>
+    </div>
+</div>

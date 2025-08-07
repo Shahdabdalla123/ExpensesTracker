@@ -1,0 +1,94 @@
+<app-header></app-header>
+
+<!-- Enhanced Search Section -->
+<div class="search-section mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card-body p-4">
+                <div class="input-group input-group-lg">
+                    <input type="text" [(ngModel)]="searchCategory" placeholder="Search by category..."
+                        class="form-control form-control-lg border-secondary" aria-label="Search expenses">
+                    <div class="input-group-append ml-2">
+                        <button class="btn btn-primary px-4 mr-2 search-btn" (click)="filteredExpenses()">
+                            <i class="bi bi-search mr-2"></i> Search
+                        </button>
+                        <button class="btn btn-outline-secondary px-4 clear-btn" (click)="clearSearch()">
+                            <i class="bi bi-x mr-2"></i> Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Rest of your existing code remains the same -->
+
+<!-- Main Content -->
+<div class="container expense-container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <span class="mb-0 text-muted font-weight-bold">
+            <i class="fas fa-receipt mr-2"></i>Showing {{ expenses?.length }} of {{TotalExpenses}} expenses
+        </span>
+        <button class="btn btn-primary" (click)="navigateToCreate()">
+             Add Expense
+        </button>
+    </div>
+
+    <!-- Enhanced Expenses Grid -->
+    <div *ngIf="expenses && expenses.length > 0; else noExpenses" class="row">
+        <div *ngFor="let exp of expenses" class="col-md-6 col-lg-4 mb-4">
+            <div class="expense-card card h-100 shadow-sm border-0 hover-effect">
+                <div class="card-header d-flex justify-content-between align-items-center bg-white border-bottom">
+                    <span class="text-muted me-1">{{ exp.category }}</span>
+
+                    <div class="expense-actions">
+                        <button class="btn btn-sm btn-outline-primary mr-1" (click)="editExpense(exp.id)" title="Edit">
+                            <i class="bi bi-pen"></i> Edit
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger  ms-3" (click)="deleteExpense(exp.id)"
+                            title="Delete">
+                            <i class="bi bi-trash"></i> Delete
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold text-dark mb-3">{{ exp.title }}</h5>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-muted small">
+                            <i class="far fa-calendar-alt mr-1"></i>
+                            {{ exp.expensesDate | date:'mediumDate' }}
+                        </span>
+                        <span class="text-muted small">
+                            <i class="far fa-clock mr-1"></i>
+                            {{ exp.expensesDate | date:'shortTime' }}
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="card-footer bg-white border-top">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="font-weight-bold h5" [ngClass]="exp.amount > 0 ? 'text-success' : 'text-danger'">
+                            {{ exp.amount | currency:'USD':'symbol':'1.2-2' }}
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- No Expenses Placeholder -->
+    <ng-template #noExpenses>
+        <div class="empty-state text-center py-5">
+            <div
+                class="empty-state-icon bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3 p-2">
+                <i class="bi bi-x fs-2 text-muted"></i>
+            </div>
+            <h4 class="text-muted font-weight-normal mb-3">No expenses found</h4>
+            <p class="text-muted mb-4">Start tracking your expenses by adding your first one</p>
+        </div>
+    </ng-template>
+</div>

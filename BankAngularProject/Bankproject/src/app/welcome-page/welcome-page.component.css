@@ -1,0 +1,6 @@
+/* Ensure it takes full screen minus navbar height */
+.welcome-wrapper {
+  min-height: calc(100vh - 56px); /* Bootstrap navbar default height */
+  background: #f8f9fa; /* same as bg-light */
+  overflow: hidden; /* prevent scrollbars */
+}

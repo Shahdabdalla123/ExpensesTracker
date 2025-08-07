@@ -1,0 +1,37 @@
+/* Search section styles */
+.search-btn {
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clear-btn {
+  transition: all 0.3s ease;
+  border-color: #6c757d;
+}
+
+.clear-btn:hover {
+  background-color: #f8f9fa;
+  color: #dc3545;
+  border-color: #dc3545;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group-append {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure proper spacing between buttons */
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.ml-2 {
+  margin-left: 0.5rem !important;
+}

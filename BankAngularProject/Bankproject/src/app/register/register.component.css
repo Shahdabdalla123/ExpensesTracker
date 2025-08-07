@@ -1,0 +1,39 @@
+  .login-image {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;  
+    display: block;
+    filter: brightness(0.7);
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+  
+  .btn-primary {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rounded {
+    border-radius: 12px !important;
+  }
+
+  .input-group,
+.mb-3 {
+  position: relative;
+}
+
+ 

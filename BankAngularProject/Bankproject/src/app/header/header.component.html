@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" routerLink="/welcome">
+      <i class="bi bi-cash-stack me-2"></i>Expenses Tracker
+    </a>
+
+ 
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+      
+      <div class="d-flex align-items-center ms-auto">
+        
+        <div *ngIf="isWelcomePage; else loggedInButtons">
+          <button class="btn btn-outline-light me-2" routerLink="/login">Sign In</button>
+          <button class="btn btn-light" routerLink="/register">Sign Up</button>
+        </div>
+
+        <ng-template #loggedInButtons>
+          <div class="me-3 text-white">
+            <span>Welcome {{username}}</span>
+          </div>
+          <button class="btn btn-outline-light" (click)="logout()">Logout</button>
+        </ng-template>
+
+      </div>
+    </div>
+  </div>
+</nav>
